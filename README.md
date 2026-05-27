@@ -13,7 +13,6 @@ Hands-on assessment covering Amazon EKS, Kubernetes concepts, AWS integrations, 
 - Part 8: DNS & Security (ACM + Route 53) ✅
 - Part 9: Security & IAM (IRSA) ✅
 - Part 10: Monitoring & Logging ✅
-- Part 11: Cleanup ⬜
 
 ## Tools Used
 - AWS EKS, eksctl, kubectl, helm
@@ -24,3 +23,5 @@ Hands-on assessment covering Amazon EKS, Kubernetes concepts, AWS integrations, 
 
 ## Manifests
 All Kubernetes manifests are in the `k8s-manifests/` folder.
+
+## Autor: Sylvia
