@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: irsa-test
+  namespace: default
+spec:
+  serviceAccountName: app-service-account
+  containers:
+  - name: aws-cli
+    image: amazon/aws-cli
+    command:
+    - /bin/bash
+    - -c
+    - |
+      echo "Testing AWS access..."
+      aws sts get-caller-identity
+      echo "Listing S3 buckets..."
+      aws s3 ls
+  restartPolicy: Never
